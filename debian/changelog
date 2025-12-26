@@ -1,3 +1,36 @@
+calamares (3.3.14-5.1) unstable; urgency=medium
+
+  * Non-maintainer upload.
+  * Don't build with -Wl,--fatal-warnings. (Closes: #1110449)
+
+ -- Adrian Bunk <bunk@debian.org>  Tue, 16 Dec 2025 07:24:20 +0200
+
+calamares (3.3.14-5) unstable; urgency=medium
+
+  * Restore debian/rules 
+
+ -- Jonathan Carter <jcc@debian.org>  Tue, 02 Dec 2025 16:05:13 +0200
+
+calamares (3.3.14-4) unstable; urgency=medium
+
+  * Ignore gcs warnings on arm64 (Closes: #1110449)
+  * Set maintainer to Debian Qt/KDE Maintainers (Closes: #1111784)
+
+ -- Jonathan Carter <jcc@debian.org>  Tue, 02 Dec 2025 13:19:45 +0200
+
+calamares (3.3.14-3) unstable; urgency=medium
+
+  * No change upload 
+
+ -- Jonathan Carter <jcc@debian.org>  Wed, 13 Aug 2025 22:16:14 +0200
+
+calamares (3.3.14-2) unstable; urgency=medium
+
+  * Add libcrypt-dev as a build-dependency
+    (Closes: #1107002)
+
+ -- Jonathan Carter <jcc@debian.org>  Wed, 13 Aug 2025 21:43:18 +0200
+
 calamares (3.3.14-1) unstable; urgency=medium
 
   * New upstream release 
