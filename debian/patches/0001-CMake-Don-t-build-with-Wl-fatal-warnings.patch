@@ -1,0 +1,25 @@
+From abca3c0fb31c8d6b09b159a7b3cf34d1dccc72fe Mon Sep 17 00:00:00 2001
+From: Adrian Bunk <bunk@debian.org>
+Date: Tue, 2 Dec 2025 17:36:58 +0200
+Subject: CMake: Don't build with -Wl,--fatal-warnings
+
+---
+ CMakeLists.txt | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/CMakeLists.txt b/CMakeLists.txt
+index b73735236..df62995e9 100644
+--- a/CMakeLists.txt
++++ b/CMakeLists.txt
+@@ -267,7 +267,7 @@ set(CMAKE_C_FLAGS_MINSIZEREL "-Os -DNDEBUG")
+ set(CMAKE_C_FLAGS_RELEASE "-O3 -DNDEBUG")
+ set(CMAKE_C_FLAGS_RELWITHDEBINFO "-O2 -g")
+ 
+-set(CMAKE_SHARED_LINKER_FLAGS "-Wl,--no-undefined -Wl,--fatal-warnings ${CMAKE_SHARED_LINKER_FLAGS}")
++set(CMAKE_SHARED_LINKER_FLAGS "-Wl,--no-undefined ${CMAKE_SHARED_LINKER_FLAGS}")
+ 
+ # If no build type is set, pick a reasonable one
+ if(DEBUG_SANITIZERS)
+-- 
+2.30.2
+
