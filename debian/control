@@ -1,12 +1,14 @@
 Source: calamares
 Section: utils
 Priority: optional
-Maintainer: Jonathan Carter <jcc@debian.org>
+Maintainer: Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
+Uploaders: Jonathan Carter <jcc@debian.org>
 Build-Depends: cmake,
                cryptsetup <!nocheck>,
                debhelper-compat (= 13),
                extra-cmake-modules,
                gettext,
+	       libcrypt-dev,
                libkf6config-dev,
                libkf6coreaddons-dev,
 	       libkf6crash-dev,
